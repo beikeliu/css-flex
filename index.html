@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flex常用属性</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .wrap {
+      margin: 20px;
+    }
+    .container {
+      display: flex;
+      width: 180px;
+      height: 180px;
+      border: 2px solid black;
+    }
+    .item {
+      width: 80px;
+      height: 80px;
+      border: 1px solid palevioletred;
+    }
+    .w-750 {
+      width: 750px; 
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <code>1. default</code>
+      <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+      </div>
+    </div>
+    <div class="wrap">
+      <code>2. flex-direction: column</code>
+      <div class="container" style="flex-direction: column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+      </div>
+    </div>
+    <div class="wrap">
+      <code>3. flex-wrap: wrap</code>
+      <div class="container" style="flex-wrap: wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+    <div class="wrap">
+      <code>4. flex-direction: column; flex-wrap: wrap</code>
+      <div class="container" style="flex-direction: column; flex-wrap: wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+      </div>
+    </div>
+    <div class="wrap">
+      <code>5. justify-content: center</code>
+      <div class="container w-750" style="justify-content: center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>   
+      </div>
+    </div>
+    <div class="wrap">
+        <code>6. justify-content: space-between</code>
+        <div class="container w-750" style="justify-content: space-between">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+      </div>
+      <div class="wrap">
+        <code>7. justify-content: space-around</code>
+        <div class="container w-750" style="justify-content: space-around">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+      </div>
+      <div class="wrap">
+        <code>8. justify-content: flex-end</code>
+        <div class="container w-750" style="justify-content: flex-end">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+      </div>
+      <div class="wrap">
+        <code>9. align-items: center</code>
+        <div class="container w-750" style="align-items: center">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+      </div>
+      <div class="wrap">
+        <code>10. justify-content: center; align-items: center</code>
+        <div class="container w-750" style="justify-content: center; align-items: center">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+      </div>
+  </body>
+</html>
